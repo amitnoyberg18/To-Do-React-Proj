@@ -1,0 +1,90 @@
+.TaskItem{
+    position: relative;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #243b55;
+    box-sizing: border-box;
+    width:30%;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    
+}
+.TaskItem .FirstContent{
+    text-align: center;
+    height:120px;
+    /* border: 1px solid white; */
+    width: 80%;
+    margin-left: 10%;
+
+}
+/* .TaskItem *{
+    float: left;
+} */
+#DeleteItem,#EditItem, #ShowContent{
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+    border: none;
+    background: transparent;
+
+}
+#DeleteItem,#EditItem{
+    float: left;
+}
+#ShowContent{
+    float:right;
+    padding:2%;
+    margin-top: 7%;
+    margin-right: 5%;
+}
+#DeleteItem{
+    border-radius:10px 2px 2px 2px;
+    font-size: 16px;
+    color: red;
+    border: 1px solid red;
+}
+#EditItem{
+    border-radius: 2px;
+    color:#03e9f4;
+    border: 1px solid #03e9f4;
+
+}
+#ShowContent{
+    border-radius: 2px;
+    color:#03e9f4;
+    border: 1px solid #03e9f4;
+}
+#DeleteItem:hover{
+    background: red;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px red,
+                0 0 25px red,
+                0 0 50px red,
+                0 0 100px red;
+}
+#EditItem:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+  }
+  #ShowContent:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+  }
+  .FirstContent > h3{
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-left: 5%;
+}
