@@ -1,0 +1,16 @@
+.TaskDetail{
+    position: absolute;
+    z-index: 2;
+    top:55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #243b55;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    height:180%;
+    border: 1px solid white;
+    width:100%;
+    overflow: hidden;
+    overflow-y: auto;
+}

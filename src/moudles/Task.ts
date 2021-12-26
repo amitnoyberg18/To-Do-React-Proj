@@ -4,5 +4,5 @@ export type Task = {
     status:string,
     TaskName:string,
     description:string,
-    timeToEnd:Date
+    timeToEnd ?:Date
 }

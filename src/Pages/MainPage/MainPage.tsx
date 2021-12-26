@@ -36,7 +36,7 @@ const MainPage = ()=>{
     // }
     return (
         <div className="MainPage">
-            <Link to={'/login'}>
+            <Link to='/login'>
                 <button id="BackButton" onClick={()=>{
                     document.cookie = "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
                 }}>Back To Login</button>
@@ -47,7 +47,9 @@ const MainPage = ()=>{
             tasks.map((task)=>(
                 <TaskItem key={task.id} task={task}/>
             ))}
-            <button id="AddItem" type="button"><span id="PlusButton">+</span> Add Item</button>
+            <Link to='/AddTask'>
+                <button id="AddItem" type="button"><span id="PlusButton">+</span> Add Item</button>
+            </Link>
             </div>
         </div>
     )
